@@ -68,4 +68,4 @@ func sendEmail(email: User.Email) {
 
 sendEmail(email: user2.email)
 sendEmail(email: user3.email)
-sendEmail(email: "spam") /// this is wrong!
+sendEmail(email: "spam") // This should NOT compile!
