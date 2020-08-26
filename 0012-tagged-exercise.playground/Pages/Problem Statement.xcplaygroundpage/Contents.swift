@@ -17,19 +17,14 @@ let user = User.init(id: 1, name: "Crvsh", devices:[])
 let devices = [Device(id: 2, name: "Tracker"),
                Device(id: 3, name: "Bike")]
 
+
 func sendCommand(_ id: Int) {
-    print ("Send command to: \(id)")
+    print ("Send command to Device with id: \(id)")
 }
 
 sendCommand(devices.first!.id)
-// sendCommand(user.id)
+//sendCommand(user.id)
 
-
-let f: (String) -> Int? = {
-    return Int($0)
-}
-
-Optional("8").map(f)
 
 
 
